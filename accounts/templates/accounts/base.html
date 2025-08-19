@@ -1,0 +1,70 @@
+  {% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Étoilé</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <header class="pro-header">
+        <div class="logo-container">
+            <span class="logo-text">Gourmet</span>
+            <span class="logo-subtext">Express</span>
+        </div>
+        <nav>
+            <ul class="pro-nav-links">
+                <li><a href="{% url 'home'%}">Accueil</a></li>
+                <li><a href="{% url 'menu'%}">Menu</a></li>
+                <li><a href="{% url 'reservation'%}">Réservations</a></li>
+                <li><a href="{% url 'contact'%}">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="cta-button">Commander</a>
+    </header>
+
+
+
+
+    <main>
+        {% block content %}
+        {% endblock %}
+     </main>
+
+    <footer class="pro-footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>À Propos</h3>
+                <p>Création d'expériences culinaires mémorables. Service rapide et ingrédients de qualité.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>123 Rue de la Gastronomie</p>
+                <p>75000 Paris</p>
+                <p>contact@gourmetexpress.fr</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Gourmet Express. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html> 
+
+
+

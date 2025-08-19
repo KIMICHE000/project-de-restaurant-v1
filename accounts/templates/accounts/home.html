@@ -1,0 +1,76 @@
+{% extends "accounts/base.html" %}
+{% load static %}
+{% block content %}
+    
+        <section class="hero-pro">
+            <div class="hero-content-pro">
+                <h1>L'art de la gastronomie à portée de clic.</h1>
+                <p>Découvrez une expérience culinaire sans précédent, avec des plats exquis préparés par les meilleurs chefs.</p>
+            </div>
+            <div class="hero-scroll-indicator">
+                <div class="mouse"></div>
+                <span>Défiler</span>
+            </div>
+        </section>
+
+        <section class="pro-section featured-dishes">
+            <h2 class="section-title">Nos plats du moment</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <div class="dish-image-wrapper">
+                        <img src="{% static 'css/images/steak.jpg' %}" alt="Plat exquis" class="dish-image">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Steak de boeuf</h3>
+                        <p class="dish-description">Une pièce de boeuf tendre, cuite à la perfection.</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">25,99 €</span>
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1500&auto=format&fit=crop" alt="Salade fraîche" class="dish-image">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Salade César</h3>
+                        <p class="dish-description">Une salade fraîche et croquante avec une sauce onctueuse.</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">12,50 €</span>
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <div class="dish-image-wrapper">
+                        <img src="{% static 'css/images/pate.jpg' %}" alt="Pâtes succulentes" class="dish-image">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Pâtes à la truffe</h3>
+                        <p class="dish-description">Des pâtes fraîches nappées d'une crème de truffe onctueuse.</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">18,00 €</span>
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pro-section about-us">
+            <h2 class="section-title">Notre histoire</h2>
+            <div class="about-content">
+                <img src="{% static 'css/images/kayser.jpg' %}" alt="Chef en cuisine" class="about-image">
+                <div class="about-text">
+                    <p>Fondée sur la passion pour l'excellence culinaire, notre restaurant a pour mission de transformer chaque repas en une célébration des sens. Nous travaillons avec des produits locaux et de saison pour vous offrir une qualité inégalée.</p>
+                    <p>Notre équipe de chefs talentueux est constamment à la recherche de nouvelles saveurs et techniques pour créer des plats qui marqueront vos esprits.</p>
+                </div>
+            </div>
+        </section>
+   
+
+        {% endblock %}

@@ -1,0 +1,71 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main>
+    <section class="pro-section cart-summary-section">
+        <h2 class="section-title">Votre Panier</h2>
+        <div class="cart-items">
+            <div class="cart-item-card">
+                <div class="item-info">
+                    <img src="{% static 'images/steak.jpg' %}" alt="Steak de boeuf" class="item-image">
+                    <div>
+                        <h4 class="item-name">Steak de boeuf</h4>
+                        <p class="item-price">25,99 €</p>
+                    </div>
+                </div>
+                <div class="item-quantity">
+                    <input type="number" value="1" min="1" class="quantity-input">
+                </div>
+                <div class="item-actions">
+                    <button class="remove-item-btn">&times;</button>
+                </div>
+            </div>
+
+            <div class="cart-item-card">
+                <div class="item-info">
+                    <img src="{% static 'images/pate.jpg' %}" alt="Pâtes à la truffe" class="item-image">
+                    <div>
+                        <h4 class="item-name">Pâtes à la truffe</h4>
+                        <p class="item-price">18,00 €</p>
+                    </div>
+                </div>
+                <div class="item-quantity">
+                    <input type="number" value="1" min="1" class="quantity-input">
+                </div>
+                <div class="item-actions">
+                    <button class="remove-item-btn">&times;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-total-info">
+            <p>Total du panier : <span id="cart-total">43,99 €</span></p>
+            <a href="#checkout-form" class="cta-button checkout-button">Valider la commande</a>
+        </div>
+    </section>
+
+    <section class="pro-section checkout-section">
+        <h2 class="section-title">Détails de la Livraison</h2>
+        <div class="contact-form-container">
+            <form id="checkout-form" class="contact-form">
+                <div class="form-group">
+                    <label for="address">Adresse de livraison</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">Ville</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="zip-code">Code postal</label>
+                    <input type="text" id="zip-code" name="zip-code" required>
+                </div>
+                <button type="submit" class="cta-button">Payer et commander</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

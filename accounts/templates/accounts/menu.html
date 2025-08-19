@@ -1,0 +1,104 @@
+{% extends 'accounts/base.html' %} 
+
+{% load static %}
+
+{% block content %}
+
+    <main>
+        <section class="pro-section menu-section">
+            <h2 class="section-title">Notre Carte</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <div class="dish-image-wrapper">
+                        <img src="{% static 'images/steak.jpg' %}" alt="Steak de boeuf" class="dish-image">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Steak de boeuf</h3>
+                        <p class="dish-description">Une pièce de boeuf tendre, cuite à la perfection, servie avec des légumes de saison rôtis.</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">25,99 €</span>
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-image-wrapper">
+                        <img src="{% static 'images/pate.jpg' %}" alt="Pâtes à la truffe" class="dish-image">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Pâtes à la truffe</h3>
+                        <p class="dish-description">Des pâtes fraîches nappées d'une crème de truffe onctueuse et parsemées de copeaux de parmesan.</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">18,00 €</span>
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-image-wrapper">
+                        <img src="{% static 'images/poulet.jpg' %}" alt="Poulet rôti" class="dish-image">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Suprême de poulet fermier</h3>
+                        <p class="dish-description">Un délicieux suprême de poulet, mariné aux herbes et accompagné d'une purée de pommes de terre maison.</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">22,50 €</span>
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-image-wrapper">
+                        <img src="{% static 'images/saumon.jpg' %}" alt="Filet de saumon" class="dish-image">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Filet de saumon aux agrumes</h3>
+                        <p class="dish-description">Filet de saumon cuit à l'unilatérale, servi sur un lit de riz basmati et une sauce aux agrumes subtile.</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">26,00 €</span>
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-image-wrapper">
+                        <img src="{% static 'images/pizza.jpg' %}" alt="Pizza" class="dish-image">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Pizza aux quatre fromages</h3>
+                        <p class="dish-description">Une délicieuse pizza garnie de mozzarella, chèvre, gorgonzola et parmesan, sur une pâte croustillante.</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">15,00 €</span>
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-image-wrapper">
+                        <img src="{% static 'images/tiramisu.jpg' %}" alt="Tiramisu" class="dish-image">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Tiramisu classique</h3>
+                        <p class="dish-description">L'incontournable dessert italien : une crème de mascarpone onctueuse et des biscuits à la cuillère imbibés de café.</p>
+                        <div class="dish-footer">
+                            <span class="dish-price">8,50 €</span>
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}
